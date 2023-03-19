@@ -15,20 +15,18 @@ function success(pos) {
     fetch(`https://www.wttr.in/${crd.latitude},${crd.longitude}?format=j1`)
         .then(response => response.json())
         .then(result => {
+            console.log(result);
             const TemperatureIcon = document.getElementById("currentTempIcon");
             TemperatureIcon.classList.add("wi-day-sunny");
-            TemperatureIcon.classList.add("animate-spin-slow")
             document.getElementById("currentTempValue").textContent = result.current_condition[0].temp_C + "°C";
+            document.getElementById("currentTempDesc").textContent = result.current_condition[0].weatherDesc[0].value;
 
             let location = `${result.nearest_area[0].areaName[0].value}, ${result.nearest_area[0].region[0].value}`
-            console.log(location)
-            document.getElementById("location").textContent = location;
-            document.getElementById("location").insertAdjacentHTML('beforebegin', "<i class=\"fa-solid fa-location-pin\"></i>")
-            /*          document.querySelector('#currentTemp').textContent = result.current_condition[0].temp_C + "°C";
-                        document.querySelector('#location').textContent = result.nearest_area[0].areaName[0].value;
-                        document.querySelector('#averageTemp').textContent = result.weather[0].avgtempC + "°C";
-                        document.querySelector('#minTemp').textContent = result.weather[0].mintempC + "°C";
-                        document.querySelector('#maxTemp').textContent = result.weather[0].maxtempC + "°C"; */
+            document.getElementById("location").innerHTML = "<i class=\"fa-solid fa-location-pin\"></i > " + location;
+
+            document.getElementById("AvgTempValue").textContent = `Average: ${result.weather[0].avgtempC}°C`
+            document.getElementById("MaxTempValue").textContent = `Max: ${result.weather[0].maxtempC}°C`
+            document.getElementById("MinTempValue").textContent = `Min: ${result.weather[0].mintempC}°C`
         })
         .catch(err => console.warn(err))
 }

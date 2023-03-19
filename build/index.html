@@ -6,41 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/weather-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link href="css/weather-icons.css" rel="stylesheet">
     <title>YAWeather</title>
 </head>
 
 <body class="bg-slate-800">
     <div class="container flex flex-col justify-center items-center mx-auto w-1/2 my-24">
         <h1 class="text-4xl text-center text-slate-200 my-24">YAWeather</h1>
-        <div class="shadow-xl w-max p-5 rounded-md bg-slate-700 opacity-80 text-slate-200">
-            <div id="currentTemp" class="flex justify-evenly space-x-10">
-                <span class="text-8xl">
-                    <i id="currentTempIcon" class="wi"></i>
+        <div class="shadow-xl w-max rounded-md bg-slate-700 opacity-80 text-slate-200 p-3">
+            <div id="currentTemp" class="flex justify-evenly space-x-10 p-3">
+                <span class="p-3">
+                    <i id="currentTempIcon" class="text-7xl my-4 wi"></i>
+                    <p id="currentTempDesc" class="text-xs text-center"></p>
                 </span>
-                <div class="inline-flex flex-col">
-                    <span class="text-base">
+                <div class="inline-flex flex-col p-3">
+                    <div class="text-base inline-flex mx-auto">
                         <p id="location"></p>
-                    </span>
-                    <span class="text-4xl mt-auto">
+                    </div>
+                    <div class="text-6xl mt-auto inline-flex mx-auto">
                         <p id="currentTempValue"></p>
-                    </span>
+                    </div>
+                    <div class="text-base mt-auto inline-flex justify-between space-x-4">
+                        <p id="AvgTempValue"></p>
+                        <p id="MaxTempValue"></p>
+                        <p id="MinTempValue"></p>
+                    </div>
                 </div>
             </div>
-            <!--<p>Current Location: <span id="location"> </span> </p>
-            <p>Current Temperature: <span id="currentTemp"> </span> </p>
-            <ul class="flex items-center justify-between space-x-3">
-                <li>
-                    <p>Average Temp: <span id="averageTemp"></span></p>
-                </li>
-                <li>
-                    <p>Max Temp Recorded: <span id="maxTemp"></span></p>
-                </li>
-                <li>
-                    <p>Min Temp Recorded: <span id="minTemp"></span></p>
-                </li>
-            </ul> -->
         </div>
     </div>
     <script src="index.js"></script>
