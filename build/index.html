@@ -16,10 +16,12 @@
         <h1 class="text-4xl text-center text-slate-200 my-24">YAWeather</h1>
         <div class="shadow-xl w-max rounded-md bg-slate-700 opacity-80 text-slate-200 p-3">
             <div id="currentTemp" class="flex justify-evenly space-x-10 p-3">
-                <span class="p-3">
-                    <i id="currentTempIcon" class="text-7xl my-4 wi"></i>
-                    <p id="currentTempDesc" class="text-xs text-center"></p>
-                </span>
+                <div class="flex flex-col justify-center items-center py-3">
+                    <span class="text-8xl py-3">
+                        <i id="currentTempIcon" class="wi"></i>
+                    </span>
+                    <p id="currentTempDesc" class="inline-block text-xs my-auto"></p>
+                </div>
                 <div class="inline-flex flex-col p-3">
                     <div class="text-base inline-flex mx-auto">
                         <p id="location"></p>
