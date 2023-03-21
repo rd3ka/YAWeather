@@ -1,4 +1,60 @@
 {
+    "113" : [
+        {
+        "iconD" : "wi-day-sunny",
+        "iconN" : "wi-night-clear"
+        }
+    ],
+
+    "116" : [
+        {
+            "iconD" : "wi-day-sunny-overcast",
+            "iconN" : "wi-night-partly-cloudy"
+        }
+    ],
+
+    "119" : [
+        {
+            "iconD" : "wi-day-cloudy",
+            "iconN" : "wi-night-alt-cloudy"
+        }
+    ],
+
+    "182" : [
+        {
+            "iconD" : "wi-day-sleet",
+            "iconN" : "wi-night-alt-sleet"
+        }
+    ],
+
+    "200" : [
+        {
+            "iconD" : "wi-day-lightning",
+            "iconN" : "wi-night-alt-lightning"
+        }
+    ],
+
+    "296" : [
+        {
+            "iconD" : "wi-day-showers",
+            "iconN" : "wi-night-alt-showers"
+        }
+    ],
+
+    "308" : [
+        {
+            "iconD" : "wi-day-rain",
+            "iconN" : "wi-night-alt-rain"
+        }
+    ],
+
+    "386" : [
+        {
+            "iconD" : "wi-day-storm-showers",
+            "iconN" : "wi-night-alt-storm-showers"
+        }
+    ],
+
     "389" : [
         {
         "iconD" : "wi-day-storm-showers",
