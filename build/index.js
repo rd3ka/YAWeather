@@ -13,7 +13,7 @@ function success(pos) {
             fetch('weatherCode.json')
                 .then(response => response.json())
                 .then(json => {
-                    const icon = json[result.current_condition[0].weatherCode][0].iconD;
+                    const icon = json[result.current_condition[0].weatherCode].iconD;
                     document.getElementById("currentTempIcon").classList.add(icon)
                 })
                 .catch(err => console.warn("WeatherCode file not found!"))
