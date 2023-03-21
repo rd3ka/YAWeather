@@ -108,13 +108,16 @@
         "iconN": "wi-night-alt-sleet"
     },
     "320": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow",
+        "iconN": "wi-night-alt-snow"
     },
     "323": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-wind",
+        "iconN": "wi-night-alt-snow"
     },
     "326": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-wind",
+        "iconN": "wi-night-alt-snow-wind"
     },
     "329": {
         "iconD": "iconN":
