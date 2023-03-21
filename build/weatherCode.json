@@ -1,64 +1,175 @@
 {
-    "113" : [
-        {
-        "iconD" : "wi-day-sunny",
-        "iconN" : "wi-night-clear"
-        }
-    ],
-
-    "116" : [
-        {
-            "iconD" : "wi-day-sunny-overcast",
-            "iconN" : "wi-night-partly-cloudy"
-        }
-    ],
-
-    "119" : [
-        {
-            "iconD" : "wi-day-cloudy",
-            "iconN" : "wi-night-alt-cloudy"
-        }
-    ],
-
-    "182" : [
-        {
-            "iconD" : "wi-day-sleet",
-            "iconN" : "wi-night-alt-sleet"
-        }
-    ],
-
-    "200" : [
-        {
-            "iconD" : "wi-day-lightning",
-            "iconN" : "wi-night-alt-lightning"
-        }
-    ],
-
-    "296" : [
-        {
-            "iconD" : "wi-day-showers",
-            "iconN" : "wi-night-alt-showers"
-        }
-    ],
-
-    "308" : [
-        {
-            "iconD" : "wi-day-rain",
-            "iconN" : "wi-night-alt-rain"
-        }
-    ],
-
-    "386" : [
-        {
-            "iconD" : "wi-day-storm-showers",
-            "iconN" : "wi-night-alt-storm-showers"
-        }
-    ],
-
-    "389" : [
-        {
-        "iconD" : "wi-day-storm-showers",
-        "iconN" : "wi-day-night-showers"
-        }
-    ]
+    "113": {
+        "iconD": "wi-day-sunny",
+        "iconN": "wi-night-clear"
+    },
+    "116": {
+        "iconD": "wi-day-sunny-overcast",
+        "iconN": "wi-night-partly-cloudy"
+    },
+    "119": {
+        "iconD": "wi-day-cloudy",
+        "iconN": "wi-night-alt-cloudy"
+    },
+    "122": {
+        "iconD": "wi-day-cloudy-high",
+        "iconN": "wi-night-cloudy-high"
+    },
+    "143": {
+        "iconD": "wi-day-fog",
+        "iconN": "wi-night-fog"
+    },
+    "176": {
+        "iconD": "wi-day-sprinkle",
+        "iconN": "wi-night-sprinkle"
+    },
+    "179": {
+        "iconD": "wi-sleet",
+        "iconN": "wi-sleet"
+    },
+    "182": {
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-alt-sleet"
+    },
+    "185": {
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-alt-sleet"
+    },
+    "200": {
+        "iconD": "wi-day-lightning",
+        "iconN": "wi-night-alt-lightning"
+    },
+    "227": {
+        "iconD": "wi-day-snow",
+        "iconN": "wi-night-snow"
+    },
+    "230": {
+        "iconD": "wi-day-snow-wind",
+        "iconN": "wi-night-snow-wind"
+    },
+    "248": {
+        "iconD": "wi-day-fog",
+        "iconN": "wi-night-fog"
+    },
+    "260": {
+        "iconD": "wi-fog",
+        "iconN": "wi-fog"
+    },
+    "263": {
+        "iconD": "wi-day-showers",
+        "iconN": "wi-night-showers"
+    },
+    "266": {
+        "iconD": "wi-day-rain-mix",
+        "iconN": "wi-night-rain-mix"
+    },
+    "281": {
+        "iconD": "wi-sleet",
+        "iconN": "wi-sleet"
+    },
+    "284": {
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-sleet"
+    },
+    "293": {
+        "iconD": "wi-day-rain-mix",
+        "iconN": "wi-night-rain-mix"
+    },
+    "296": {
+        "iconD": "wi-day-rain-mix",
+        "iconN": "wi-night-rain-mix"
+    },
+    "299": {
+        "iconD": "wi-day-showers",
+        "iconN": "wi-night-showers"
+    },
+    "302": {
+        "iconD": "wi-day-rain",
+        "iconN": "wi-night-rain"
+    },
+    "305": {
+        "iconD": "wi-day-showers",
+        "iconN": "wi-night-showers"
+    },
+    "308": {
+        "iconD": "wi-day-rain",
+        "iconN": "wi-night-alt-rain"
+    },
+    "311": {
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-alt-sleet"
+    },
+    "314": {
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-alt-sleet"
+    },
+    "317": {
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-alt-sleet"
+    },
+    "320": {
+        "iconD": "iconN":
+    },
+    "323": {
+        "iconD": "iconN":
+    },
+    "326": {
+        "iconD": "iconN":
+    },
+    "329": {
+        "iconD": "iconN":
+    },
+    "332": {
+        "iconD": "iconN":
+    },
+    "335": {
+        "iconD": "iconN":
+    },
+    "338": {
+        "iconD": "iconN":
+    },
+    "350": {
+        "iconD": "iconN":
+    },
+    "353": {
+        "iconD": "iconN":
+    },
+    "356": {
+        "iconD": "iconN":
+    },
+    "359": {
+        "iconD": "iconN":
+    },
+    "362": {
+        "iconD": "iconN":
+    },
+    "365": {
+        "iconD": "iconN":
+    },
+    "368": {
+        "iconD": "iconN":
+    },
+    "371": {
+        "iconD": "iconN":
+    },
+    "374": {
+        "iconD": "iconN":
+    },
+    "377": {
+        "iconD": "iconN":
+    },
+    "386": {
+        "iconD": "wi-day-storm-showers",
+        "iconN": "wi-night-alt-storm-showers"
+    },
+    "389": {
+        "iconD": "wi-day-storm-showers",
+        "iconN": "wi-day-night-showers"
+    },
+    "392": {
+        "iconD": "iconN":
+    },
+    "395": {
+        "iconD": "iconN":
+    }
 }

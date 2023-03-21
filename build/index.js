@@ -6,18 +6,17 @@ const options = {
 
 function success(pos) {
     const crd = pos.coords;
-
-    console.log("Your current position is:");
-    console.log(`Latitude : ${crd.latitude}`);
-    console.log(`Longitude: ${crd.longitude}`);
-    console.log(`More or less ${crd.accuracy} meters.`);
-
-    fetch(`https://www.wttr.in/${crd.latitude},${crd.longitude}?format=j1`)
+    fetch(`https://v2.wttr.in/${crd.latitude},${crd.longitude}?format=j1`)
         .then(response => response.json())
         .then(result => {
-            console.log(result);
-            const TemperatureIcon = document.getElementById("currentTempIcon");
-            TemperatureIcon.classList.add("wi-day-sunny");
+            /* console.log(result); */
+            fetch('weatherCode.json')
+                .then(response => response.json())
+                .then(json => {
+                    const icon = json[result.current_condition[0].weatherCode].iconD;
+                    document.getElementById("currentTempIcon").classList.add(icon)
+                })
+                .catch(err => console.warn("WeatherCode file not found!"))
             document.getElementById("currentTempValue").textContent = result.current_condition[0].temp_C + "°C";
             document.getElementById("currentTempDesc").textContent = result.current_condition[0].weatherDesc[0].value;
 
@@ -34,5 +33,4 @@ function success(pos) {
 function error(err) {
     console.warn(`ERROR(${err.code}): ${err.message} `);
 }
-
 navigator.geolocation.getCurrentPosition(success, error, options);
