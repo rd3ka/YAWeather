@@ -1,6 +1,7 @@
 # YAWeather - YetAnotherWeather-JS-webapp
 
 ![YAWeather-banner](screenshots/ss_01.png)
+
 The second YA application backed using vanila `JS` wrapper of [wttr](https://wttr.in), the right way to check the weather!
 
 ## Motivation
