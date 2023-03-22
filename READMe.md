@@ -9,7 +9,7 @@ To strengthen the fundamentals of web development and web based technologies. Co
 >Huge shoutout to [Riya](https://www.github.com/buna26) for contributing weather specific codes to help map weather icon.
 
 ## Behind the Scene
-For front end, this application uses  ![tailwind](screenshots/icons8-tailwindcss-16.png) tailwindcss. TailwindCSS makes styling easier and intuitive reducing the time it takes to write the front end. The backend uses vanilla JS for DOM manipulation. [wttr](https://wttr.in) is used to fetch weather data in JSON. Best part of wttr is that it has a huge list of weather properties in different formats w/o any API limitaions or auth keys.
+For front end, this application uses  ![tailwind](screenshots/icons8-tailwindcss-16.png) tailwindcss. TailwindCSS makes styling easier and intuitive reducing the time it takes to write the front end. The backend uses vanilla JS for DOM manipulation. [wttr](https://wttr.in) is used to fetch weather data in JSON. Best part of wttr is that it has a huge list of weather properties in different formats w/o any API limitations or auth keys.
 
 ## Dependencies
 If you want to add more feature and continue to develop. Please install these dependencies using npm. Node is a d-level dependency and should be installed 
@@ -37,3 +37,4 @@ To compile tailwindcss into normal css:
 - [ ] Add a search location bar
 - [ ] Add local time
 - [ ] Add some color and life
+- [ ] Deploy
