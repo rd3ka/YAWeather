@@ -26,6 +26,12 @@ function success(pos) {
             document.getElementById("AvgTempValue").textContent = `Average: ${result.weather[0].avgtempC}°C`
             document.getElementById("MaxTempValue").textContent = `Max: ${result.weather[0].maxtempC}°C`
             document.getElementById("MinTempValue").textContent = `Min: ${result.weather[0].mintempC}°C`
+
+            document.getElementById("windIcon").classList.add("wi-strong-wind")
+            document.getElementById("windSpeed").textContent = `Windspeed: ±${result.current_condition[0].windspeedKmph}km/hr`;
+
+            document.getElementById("humidityIcon").classList.add("wi-humidity")
+            document.getElementById("humidity").textContent = `Humidity: ±${result.current_condition[0].humidity}%`;
         })
         .catch(err => console.warn(err))
 }

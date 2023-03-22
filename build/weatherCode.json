@@ -120,46 +120,60 @@
         "iconN": "wi-night-alt-snow-wind"
     },
     "329": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-wind",
+        "iconN": "wi-night-snow-wind"
     },
     "332": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-wind",
+        "iconN": "wi-night-snow-wind"
     },
     "335": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-thunderstorm",
+        "iconN": "wi-night-snow-thunderstorm"
     },
     "338": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-wind",
+        "iconN": "wi-night-snow-wind"
     },
     "350": {
-        "iconD": "iconN":
+        "iconD": "wi-sleet",
+        "iconN": "wi-sleet"
     },
     "353": {
-        "iconD": "iconN":
+        "iconD": "wi-day-showers",
+        "iconN": "wi-night-showers"
     },
     "356": {
-        "iconD": "iconN":
+        "iconD": "wi-day-showers",
+        "iconN": "wi-night-showers"
     },
     "359": {
-        "iconD": "iconN":
+        "iconD": "wi-day-rain",
+        "iconN": "wi-night-rain"
     },
     "362": {
-        "iconD": "iconN":
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-sleet"
     },
     "365": {
-        "iconD": "iconN":
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-sleet"
     },
     "368": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow",
+        "iconN": "wi-night-snow"
     },
     "371": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-thunderstorm",
+        "iconN": "wi-night-snow-thunderstorm"
     },
     "374": {
-        "iconD": "iconN":
+        "iconD": "wi-day-sleet",
+        "iconN": "wi-night-sleet"
     },
     "377": {
-        "iconD": "iconN":
+        "iconD": "wi-sleet",
+        "iconN": "wi-sleet"
     },
     "386": {
         "iconD": "wi-day-storm-showers",
@@ -170,9 +184,11 @@
         "iconN": "wi-day-night-showers"
     },
     "392": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-thunderstorm",
+        "iconN": "wi-night-snow-thunderstorm"
     },
     "395": {
-        "iconD": "iconN":
+        "iconD": "wi-day-snow-wind",
+        "iconN": "wi-night-snow-wind"
     }
 }
