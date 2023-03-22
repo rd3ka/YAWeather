@@ -12,6 +12,6 @@ To strengthen the fundamentals of web development and web based technologies. Co
 For front end, this application uses  ![tailwind](screenshots/icons8-tailwindcss-16.png) tailwindcss. TailwindCSS makes styling easier and intuitive reducing the time it takes to write the front end. The backend uses vanilla JS for DOM manipulation. [wttr](https://wttr.in) is used to fetch weather data in JSON. Best part of wttr is that it has a huge list of weather properties in different formats w/o any API limitaions or auth keys.
 
 ## Todo
-- [] Add a search location bar
-- [] Add local time
-- [] Add some color and life
+- [ ] Add a search location bar
+- [ ] Add local time
+- [ ] Add some color and life
