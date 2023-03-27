@@ -1,6 +1,8 @@
 # YAWeather - YetAnotherWeather-JS-webapp
 
-![YAWeather-banner](screenshots/ss_01.png)
+<p align="center">
+  <img src="./screenshots/ss_01.png">
+</p>
 
 The second YA application backed using vanila `JS` wrapper of [wttr](https://wttr.in), the right way to check the weather!
 
@@ -15,17 +17,17 @@ For front end, this application uses  ![tailwind](screenshots/icons8-tailwindcss
 If you want to add more feature and continue to develop. Please install these dependencies using npm. Node is a d-level dependency and should be installed 
 
 ```bash
-    npm -i tailwindcss 
+npm -i tailwindcss 
 ```
 In the package.json file add this line:
 ```json
-    "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
-    }
+"scripts": { 
+"tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"  
+}
 ```
 To compile tailwindcss into normal css:
 ```bash
-    npm run tailwind
+npm run tailwind
 ```
 
 ## Authors
@@ -34,7 +36,7 @@ To compile tailwindcss into normal css:
 
 
 ## Todo
-- [x] ~~Add a search location bar~~ *Not functionality yet*
+- [x] ~~Add a search location bar~~ *Not functional yet*
 - [x] ~~Add local time~~
 - [ ] Add some color and life
 - [ ] Deploy
