@@ -34,7 +34,7 @@ To compile tailwindcss into normal css:
 
 
 ## Todo
-- [ ] Add a search location bar
-- [ ] Add local time
+- [x] ~~Add a search location bar~~ *Not functionality yet*
+- [x] ~~Add local time~~
 - [ ] Add some color and life
 - [ ] Deploy
