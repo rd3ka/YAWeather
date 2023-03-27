@@ -4,34 +4,41 @@ const options = {
     maximumAge: 0,
 };
 
+/* fetching all the tag that will be updated with data */
+const current = document.getElementById("current"),
+    display = document.getElementById("disp"),
+    wind = document.getElementById("wind"),
+    humidity = document.getElementById("humidity");
+
 function success(pos) {
     const crd = pos.coords;
     fetch(`https://v2.wttr.in/${crd.latitude},${crd.longitude}?format=j1`)
         .then(response => response.json())
         .then(result => {
-            /* console.log(result); */
+            console.log(result);
             fetch('weatherCode.json')
                 .then(response => response.json())
                 .then(json => {
                     const icon = json[result.current_condition[0].weatherCode].iconD;
-                    document.getElementById("currentTempIcon").classList.add(icon)
+                    current.childNodes[1].children[0].classList.add(icon);
                 })
-                .catch(err => console.warn("WeatherCode file not found!"))
-            document.getElementById("currentTempValue").textContent = result.current_condition[0].temp_C + "°C";
-            document.getElementById("currentTempDesc").textContent = result.current_condition[0].weatherDesc[0].value;
+                .catch(err => console.warn(err, "WeatherCode file not found!"))
 
-            let location = `${result.nearest_area[0].areaName[0].value}, ${result.nearest_area[0].region[0].value}`
-            document.getElementById("location").innerHTML = "<i class=\"fa-solid fa-location-pin\"></i > " + location;
+            /* Updating fetched elements with data */
+            current.childNodes[3].children[0].textContent = result.current_condition[0].weatherDesc[0].value;
 
-            document.getElementById("AvgTempValue").textContent = `Average: ${result.weather[0].avgtempC}°C`
-            document.getElementById("MaxTempValue").textContent = `Max: ${result.weather[0].maxtempC}°C`
-            document.getElementById("MinTempValue").textContent = `Min: ${result.weather[0].mintempC}°C`
+            display.childNodes[1].firstElementChild.innerHTML = "<i class=\"fa-solid fa-location-pin\"></i > " +
+                `${result.nearest_area[0].areaName[0].value}, ${result.nearest_area[0].region[0].value}`;
+            display.childNodes[3].firstElementChild.textContent = result.current_condition[0].temp_C + "°C";
 
-            document.getElementById("windIcon").classList.add("wi-strong-wind")
-            document.getElementById("windSpeed").textContent = `Windspeed: ±${result.current_condition[0].windspeedKmph}km/hr`;
+            const mma = [`Average: ${result.weather[0].avgtempC}°C`, `Max: ${result.weather[0].maxtempC}°C`, `Min: ${result.weather[0].mintempC}°C`];
+            display.childNodes[5].childNodes.forEach((val, index) => val.textContent = mma[index]);
 
-            document.getElementById("humidityIcon").classList.add("wi-humidity")
-            document.getElementById("humidity").textContent = `Humidity: ±${result.current_condition[0].humidity}%`;
+            wind.childNodes[1].classList.add("wi-strong-wind");
+            wind.childNodes[3].textContent = `Windspeed: ±${result.current_condition[0].windspeedKmph}km/hr`;
+
+            humidity.childNodes[1].classList.add("wi-humidity");
+            humidity.childNodes[3].textContent = `Humidity: ±${result.current_condition[0].humidity}%`;
         })
         .catch(err => console.warn(err))
 }
